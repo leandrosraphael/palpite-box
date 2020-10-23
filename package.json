@@ -1,12 +1,13 @@
 {
-  "name": "Palpite-box",
+  "name": "palpite-box",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next ",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "keywords": [],
   "author": "Leandro Raphael",
@@ -18,5 +19,9 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "tailwindcss": "^1.8.10"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "style-loader": "^2.0.0"
   }
 }

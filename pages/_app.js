@@ -1,15 +1,16 @@
 import React from 'react'
-import './pages/css/styles.css'
+import './css/styles.css'
+import Header from './components/Header'
 
 const MyApp = ({Component, pageProps}) => {
   return (
-    <div>
-      <h1>MyApp</h1>
-      <Component {...pageProps}/>
+    <div> 
+    <Header />
+    <div className='container mx-auto'>
+    <Component {...pageProps}/>
     </div>
+  </div>
   )
-  
-
-}
+  }
 
 export default MyApp
